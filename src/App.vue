@@ -14,6 +14,7 @@
           <div class="num">{{ num }}</div>
           <a  class="bt" v-on:click="drawPrize" title="抽奖">抽奖</a>
           <div class="out">{{ out_name }}</div>
+          <!--div class="out">胡圣喜</div-->
         </div>
       </div>
     </div>
@@ -24,9 +25,8 @@ export default {
   name: 'app',
   data(){
     return {
-      count_1: '请输入参与者，逗号间隔...',
+      count_1: '廖德隆，林文雅，李旭辉，赵鑫晖，蔡茹芸，唐相儒，张可，龚月婴，黄爱珠，梁晓怡，王佳妮，张贝贝，周殊颖，肖遥，冯敏超，石泽远，张昶，夏玮蔚，胡圣喜，吉婉颖，刘聪，梁秋实，区诗柔，王皖莹，徐雅静，余依蕾，朱承浩，刘尧宗',
       num: 0,
-      arr: [],
       name: [],
       out_name: '？',
     }
@@ -37,7 +37,7 @@ export default {
       var self = this
       var interval = setInterval(() => {
         self.num = Math.floor(Math.random()*self.name.length)
-      },100)
+      },50)
       setTimeout(() => {
         clearInterval(interval)
         var index = self.num

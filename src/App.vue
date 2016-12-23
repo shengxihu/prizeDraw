@@ -131,7 +131,7 @@ textarea {
   border: 1px solid #fff;
   color: #fff;
 }
-.bt:hover{
+.total .bt:hover{
   color: #000;
 	background:#fff;
 }
